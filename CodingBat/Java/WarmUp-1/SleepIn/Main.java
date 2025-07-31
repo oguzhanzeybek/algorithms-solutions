@@ -1,6 +1,11 @@
 public class Main {
     public boolean sleepIn(boolean weekday, boolean vacation) {
-        return !weekday || vacation;
+        if(!weekday || vacation){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public static void main(String[] args) {
